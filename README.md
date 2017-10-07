@@ -5,9 +5,9 @@ A UT matrix of integer arrays is created, with each integer element initialized
 to 0.  The processing increments each element.  Finally, each integer element is checked to
 verify that it's 1.  If not, the indexing scheme for the threads is probably faulty.
 
-To compile:  g++ threadTest.cpp  -pthread -std=c++11
+To compile:  g++ -g checkParallelUT.cpp -pthread -std=c++11
 
-To run:  ./prog a b c, where
+To run:  ./a.out a b c, where
          a - matrix rows/columns
          b - length of integer vector associated with each
              unorder pair of indices
